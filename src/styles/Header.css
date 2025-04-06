@@ -1,0 +1,41 @@
+/* Estilização do Header */
+.header {
+    width: 100%;
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container do conteúdo do header */
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Ícone do header */
+  .header-icon {
+    font-size: 28px;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  /* Animação sutil no ícone */
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-3px);
+    }
+  }
+  

@@ -1,0 +1,183 @@
+body, html {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ajuste para garantir que os botões fiquem lado a lado */
+.emotions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Ajuste para os botões de emoção */
+.emotion {
+  width: 100px; /* Define uma largura fixa */
+  height: 100px; /* Define uma altura fixa */
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  border: 2px solid #ff7f50;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Ajuste para destacar o botão selecionado */
+.emotion.selected {
+  background: #ff4500;
+  color: white;
+  border: 2px solid #ff4500;
+}
+
+/* Garante que o texto dentro do botão esteja bem posicionado */
+.emotion br {
+  display: block;
+}
+
+/* Ajuste da largura do container para centralizar melhor */
+.container {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste do texto para evitar overflow */
+.selected-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Ajuste do seletor de crianças */
+.select-child {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ff7f50;
+  background: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+/* Mudança de cor ao focar no seletor */
+.select-child:focus {
+  border-color: #ff4500;
+  outline: none;
+}
+
+/* Melhorando a aparência do botão de voltar */
+.back-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #555;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.back-button:hover {
+  background: #333;
+}
+
+/* Botão de continuar */
+.start-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de hover */
+.start-button:hover {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo quando desativado */
+.start-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Estilização da lista de histórico */
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.history-item {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ff7f50;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.history-item small {
+  color: #666;
+  font-size: 12px;
+}
+
+
+/* Estilização do botão de histórico */
+.history-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.history-button:hover {
+  background: #0056b3;
+}
